@@ -1,29 +1,19 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
-    "image": {
-      "url": "images/features/noun_branding_1885335.svg",
-      "width": 80,
-      "height": 80
-    }
+      "title": "Tested Curriculum",
+    "description": "DHRIFT curriculum have been developed, used, and tested in classrooms at over twenty colleges and universities",
+      "icon": "fa-graduation-cap",
+      "alt": "An icon of a chalkboard"},
+  {
+    "title": "Thoughtful Infrastructure",
+    "description": "DHRIFT provides sites for your technical intensives and workshops that help you to teach technical topics effectively",
+      "icon": "fa-cogs",
+      "alt": "An icon of cogs representing infrastructure.",
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
-      "width": 80,
-      "height": 80
-    }
-  },
-  {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
-      "width": 80,
-      "height": 80
-    }
+    "title": "Humanities Values",
+    "description": "DHRIFT is created by humanists, for humanists. We value inclusivity and openness in the design of our curriculum and platform.",
+      "icon": "fa-key",
+      "alt": "Icon of a key representing the humanities",
   }
 ]
