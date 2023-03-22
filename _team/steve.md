@@ -1,7 +1,7 @@
 ---
 title: "Stephen Zweibel"
 date: 2018-11-19T10:47:58+10:00
-image: "images/team/unknown.jpg"
+image: "images/team/steve.jpg"
 jobtitle: "Principal Investigator"
 commons: "https://commons.gc.cuny.edu/members/szweib/"
 weight: 2
