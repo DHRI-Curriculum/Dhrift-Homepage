@@ -1,7 +1,7 @@
 ---
 title: "Leanne Fan"
 date: 2018-11-19T10:47:58+10:00
-image: "images/team/unknown.jpg"
+image: "images/team/leanne.png"
 jobtitle: "Principal Investigator"
 commons: "https://commons.gc.cuny.edu/members/leannefan/"
 weight: 3
