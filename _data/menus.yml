@@ -2,12 +2,15 @@ main:
   - name: "About"
     url: "/about/"
     weight: 1
+  - name: "FAQ"
+    url: "/faq/"
+    weight: 2
   - name: "Team"
     url: "/team/"
-    weight: 2
+    weight: 3
   - name: "Contact"
     url: "/contact/"
-    weight: 3
+    weight: 4
 
 footer:
   - name: "Home"
