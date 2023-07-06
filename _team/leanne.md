@@ -2,7 +2,7 @@
 title: "Leanne Fan"
 date: 2018-11-19T10:47:58+10:00
 image: "images/team/leanne.png"
-jobtitle: "Principal Investigator"
+jobtitle: "Project Manager"
 commons: "https://commons.gc.cuny.edu/members/leannefan/"
 weight: 3
 promoted: true

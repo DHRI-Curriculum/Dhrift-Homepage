@@ -2,7 +2,8 @@
 title: "Patrick Smyth"
 date: 2018-11-19T10:47:58+10:00
 image: "images/team/patrick.jpg"
-jobtitle: "Principal Investigator"
+image-full: "images/team/full-size/patrick_full.jpg"
+jobtitle: "API Development and Accessibility Consultant"
 commons: "http://cuny.is/psmyth"
 weight: 5
 promoted: true
