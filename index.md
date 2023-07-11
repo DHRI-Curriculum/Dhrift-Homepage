@@ -13,4 +13,3 @@ show_call_box: false
 </h1>
 
 DHRIFT is a curriculum and infrastructure for technical teaching in the humanities.
-
