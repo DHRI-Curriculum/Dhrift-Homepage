@@ -2,18 +2,18 @@
   {
       "title": "Tested Curriculum",
     "description": "DHRIFT curriculum have been developed, used, and tested in classrooms at over twenty colleges and universities",
-      "icon": "fa-graduation-cap",
-      "alt": "An icon of a chalkboard"},
+      "icon": "dandelion",
+      "alt": "DHRIFT's logo, a dandelion."},
   {
     "title": "Thoughtful Infrastructure",
     "description": "DHRIFT provides sites for your technical intensives and workshops that help you to teach technical topics effectively",
-      "icon": "fa-cogs",
-      "alt": "An icon of cogs representing infrastructure.",
+      "icon": "dandelion",
+      "alt": "DHRIFT's logo, a dandelion."
   },
   {
     "title": "Humanities Values",
     "description": "DHRIFT is created by humanists, for humanists. We value inclusivity and openness in the design of our curriculum and platform.",
-      "icon": "fa-key",
-      "alt": "Icon of a key representing the humanities",
+      "icon": "dandelion",
+      "alt": "DHRIFT's logo, a dandelion."
   }
 ]

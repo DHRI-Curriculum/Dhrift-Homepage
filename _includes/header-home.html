@@ -1,0 +1,21 @@
+<div class="header-home">
+    <div class="container">
+        <div class="top-row">
+            <div class="logo">
+                <a href="{{ site.baseurl }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
+            </div>
+            <div class="navigation">
+                {% include main-menu.html %}
+                {% include hamburger.html %}
+            </div>
+        </div>
+    </div>
+    <div class="intro-container">
+        <span id="intro-text">A curriculum and <br>infrastructure for <br>technical teaching in<br> the humanities</span>
+        <div class = "button-container">
+        <p><a href="/learn-more" class="dark-button">Learn More</a></p>
+        </div>
+    </div>
+</div>
+
+

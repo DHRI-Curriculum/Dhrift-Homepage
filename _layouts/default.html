@@ -31,12 +31,17 @@
 <body class='page {{layout.bodyClass}}'>
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
-    {% include header.html headerClass='header-extra' %}
+    {% if page.url == "/" %}  <!-- Check if the page is the home page by comparing the URL -->
+    {% include header-home.html headerClass='header-extra' %} <!-- Use a specific header for the home page -->
+  {% else %}
+    {% include header.html headerClass='header-extra' %} <!-- Use the regular header for other pages -->
+  {% endif %}
     {{content}}
   </div>
   {% include footer.html %}
   {% include sub-footer.html %}
   <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/updatePageName.js' | relative_url }}"></script>
   {% include google-analytics.html %}
 </body>
 </html>

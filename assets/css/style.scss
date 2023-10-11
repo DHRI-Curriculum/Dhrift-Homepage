@@ -1,14 +1,33 @@
 ---
 ---
 
+// load fonts
+@font-face{
+  font-family: 'Bricolage Grotesque';
+  src: url('/assets/fonts/BricolageGrotesque_36pt-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Bricolage Grotesque Extra-Light';
+  src: url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,400;12..96,700&family=Montserrat:wght@400;700&family=Poppins&display=swap')
+}
+
+@font-face{
+  font-family: 'Poppins Regular';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
 // Colors
-$primary: #5d55a5;
-$primary-dark: #a01b16;
-$secondary: #f88379;
-$black: #2f2f41;
+$primary: #614F42; //bark
+$primary-dark: #3C342F; // dark bark
+$secondary: #FFF9F4; //cream
+$dark-cream: #EEE7E1; //dark cream
+$black: #1B1621;
 $white: #ffffff;
 $white-offset: #fff6f8;
-$steel: #5c5a5a;
+$steel: #5c5a5a; 
+$peach: #D8AC6C;
+$sky: #98D3D0;
 
 // Links
 $link-color: $primary;
@@ -17,8 +36,9 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: "Poppins Regular";
+$font-family-heading: "Bricolage Grotesque";
+$font-family-bc-light: "Bricolage Grotesque Extra-Light";
 
 // Footer
 $footer-background-color: $primary;
@@ -86,4 +106,330 @@ ul li {
 .no-paragraphs a {
     margin-left: .3em;
 
+}
+
+.content {
+  margin-top:-40px;
+}
+
+// header stuff
+.header {
+  background-image: url('/images/header-bkg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: (brightness(115%));
+  background-color: $dark-cream;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column
+}
+
+// lighten up the header image a bit more with a gradient
+.header::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-home{
+  background-image: url('/images/header-bkg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: (brightness(115%));
+  background-color: $dark-cream;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column
+}
+
+.header-home::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  //background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin-right: auto !important;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  padding: 10px; 
+}
+
+.logo {
+  margin-right: auto; 
+}
+
+.navigation {
+  margin-left: auto ; 
+  font-family: 'Bricolage Grotesque' !important;
+}
+
+.page-name {
+  text-align: center;
+  //font-weight: bold;
+  font-size: 2.8em;
+  margin-top: 20px;
+  font-family: $font-family-heading;
+}
+
+.main-menu .active a {
+  border-bottom: 2px solid $sky;
+}
+
+.main-menu a:hover {
+  text-decoration-color: $sky !important;
+}
+
+// features
+.feature-container {
+  padding: 20px;
+  background-image: url('/images/features-bkg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: (brightness(90%));
+}
+
+//overlay feature container with light blue to make it look more like designer doc
+.feature-container::before {
+  content: "";
+  background: rgba(152, 211, 208, 0.25);
+  pointer-events: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.feature {
+  border: none; 
+  outline: none;
+  margin-left: 60px; 
+  margin-right: 60px; 
+  font-size: smaller;
+  // make fully transparent background
+  background-color: rgba(255, 255, 255, 0.0);
+
+  .feature-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    //margin-bottom: 10px;
+    color: $white;
+  }
+
+  .feature-content {
+    //font-size: 1.2em;
+    margin-top: -2px;
+    color: white;
+  }
+
+  .feature-image {
+    width: 40px;
+    height: 40px;
+    transform: rotate();
+  }
+}
+
+//home page stuff
+.intro-container {
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 200px;
+  align-self: flex-start !important;
+  margin-bottom: 40px;
+}
+
+#intro-text {
+  font-family: $font-family-heading !important;
+  color: $primary !important;
+  text-align: left;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  align-self: flex-start !important;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-self: flex-start !important;
+}
+
+.dark-button {
+  background-color: $primary;
+  color: $white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 0; 
+  transition: background-color 0.3s;
+}
+
+.dark-button:hover {
+  background-color: $sky; 
+  color: $primary;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+//actions
+#actions {
+  text-align: center;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary;
+  margin: 0; 
+  padding: 0;
+}
+
+.action {
+  max-width: 200px;
+  text-align: center;
+  margin-top: 40px;
+  //margin: 0 auto 20px;
+}
+
+.action img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.action h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.action p {
+  font-size: 1em;
+  color: #555;
+}
+
+.action-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-right: 55px;
+  align-items: flex-start;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $white; 
+  color: $primary;
+  text-decoration: none;
+  border: $primary 2px solid;
+  //border-radius: 5px;
+  font-size: 1.5em;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: $primary;
+  color: $white; 
+  text-decoration: none;
+}
+
+// footer stuff
+.footer {
+  background-color: $primary; 
+  color: $white; 
+  padding: 20px 0; 
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px; 
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline; 
+}
+
+.sub-footer {
+  background-color: $primary; 
+  color: $white; 
+}
+
+.sub-footer-inner {
+  background-color: $primary !important;
+  color: $white; 
+}
+
+.copyright {
+  background-color: $primary !important;
+}
+
+// partner logos banner
+.banner {
+  // add background image
+  background-color: $dark-cream;
+  color: #fff;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.partner {
+  margin: 0 30px; 
+  max-width: 170px; 
+  max-height: fit-content;
+}
+
+// team page
+.team {
 }
