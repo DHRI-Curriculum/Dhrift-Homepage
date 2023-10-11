@@ -35,8 +35,8 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
-plugins:
-  - jekyll-environment-variables
+# plugins:
+  # - jekyll-environment-variables
 
 exclude:
   - Gemfile
