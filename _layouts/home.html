@@ -30,7 +30,6 @@ bodyClass: "page-home"
 <section id="actions">
   <div class="action">
     <!-- First action centered -->
-    <!--<img src="/images/icon-dandelion.png" alt="Dandelion Icon">-->
     <a href="https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops" class="action-button" target="_blank">
     <h3>Learn</h3>
     </a>
@@ -40,7 +39,6 @@ bodyClass: "page-home"
     <!-- Following actions in a row -->
     {% for action in site.data.actions offset:1 %}
     <div class="action">
-      <!--<img src="/images/icon-dandelion.png" alt="Dandelion Icon">-->
       <a href="{{action.link}}" class="action-button" target="_blank"><h3>{{ action.title }}</h3></a>
       <p>{{ action.description }}</p>
     </div>

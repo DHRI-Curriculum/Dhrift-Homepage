@@ -188,20 +188,29 @@ ul li {
 }
 
 .logo {
-  margin-right: auto; 
+  margin-right: auto;
+  img {
+    width: 500px;
+    height: auto;
+  }
 }
 
 .navigation {
   margin-left: auto ; 
-  font-family: 'Bricolage Grotesque' !important;
+  font-family: $font-family-heading !important;
 }
 
 .page-name {
   text-align: center;
   //font-weight: bold;
-  font-size: 2.8em;
+  font-size: 3.2em;
   margin-top: 20px;
   font-family: $font-family-heading;
+}
+
+.main-menu ul li a {
+  font-size: 1.7em; 
+  padding-right: 25px;
 }
 
 .main-menu .active a {
@@ -219,7 +228,7 @@ ul li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: (brightness(90%));
+  filter: (brightness(85%));
 }
 
 //overlay feature container with light blue to make it look more like designer doc
@@ -233,6 +242,7 @@ ul li {
   width: 100%;
   height: 100%;
   z-index: -1;
+  
 }
 
 .feature {
@@ -240,7 +250,7 @@ ul li {
   outline: none;
   margin-left: 60px; 
   margin-right: 60px; 
-  font-size: smaller;
+  font-size: 1.4em;
   // make fully transparent background
   background-color: rgba(255, 255, 255, 0.0);
 
@@ -264,6 +274,8 @@ ul li {
   }
 }
 
+
+
 //home page stuff
 .intro-container {
   text-align: left;
@@ -277,14 +289,14 @@ ul li {
   font-family: $font-family-heading !important;
   color: $primary !important;
   text-align: left;
-  font-size: 2.5em;
+  font-size: 3em;
   line-height: 1.2em;
   align-self: flex-start !important;
 }
 
 .button-container {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
   align-self: flex-start !important;
 }
@@ -296,6 +308,7 @@ ul li {
   padding: 10px 20px; 
   border-radius: 0; 
   transition: background-color 0.3s;
+  font-size: 1.5em;
 }
 
 .dark-button:hover {
@@ -315,13 +328,14 @@ ul li {
   background-color: $secondary;
   margin: 0; 
   padding: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .action {
   max-width: 200px;
   text-align: center;
-  margin-top: 40px;
-  //margin: 0 auto 20px;
+  margin-top: 20px;
 }
 
 .action img {
@@ -331,12 +345,12 @@ ul li {
 }
 
 .action h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 10px 0;
 }
 
 .action p {
-  font-size: 1em;
+  font-size: 1.25em;
   color: #555;
 }
 
@@ -373,7 +387,7 @@ ul li {
 .footer {
   background-color: $primary; 
   color: $white; 
-  padding: 20px 0; 
+  padding: 20px 0;
 }
 
 .menu {
@@ -383,12 +397,13 @@ ul li {
 }
 
 .menu li {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.4em; 
 }
 
 .menu a:hover {
@@ -407,6 +422,7 @@ ul li {
 
 .copyright {
   background-color: $primary !important;
+  font-size: 1.1em !important;
 }
 
 // partner logos banner
