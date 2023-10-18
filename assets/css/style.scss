@@ -122,7 +122,7 @@ ul li {
   background-color: $dark-cream;
   display: flex;
   justify-content: space-between;
-  flex-direction: column
+  flex-direction: column;
 }
 
 // lighten up the header image a bit more with a gradient
@@ -147,7 +147,8 @@ ul li {
   background-color: $dark-cream;
   display: flex;
   justify-content: space-between;
-  flex-direction: column
+  flex-direction: column;
+  width: 100%;
 }
 
 .header-home::before {
@@ -166,17 +167,19 @@ ul li {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .header-home-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .logo-container {
-  margin-right: auto !important;
+  //margin-right: auto !important;
 }
 
 .top-row {
@@ -188,7 +191,7 @@ ul li {
 }
 
 .logo {
-  margin-right: auto;
+  //margin-right: auto;
   img {
     width: 500px;
     height: auto;
@@ -196,18 +199,25 @@ ul li {
 }
 
 .navigation {
-  margin-left: auto ; 
+  //margin-left: auto ; 
   font-family: $font-family-heading !important;
 }
 
 .page-name {
   text-align: center;
   //font-weight: bold;
-  font-size: 3.2em;
+  font-size: 6em !important;
   margin-top: 20px;
-  font-family: $font-family-heading;
+  font-family: $font-family-heading !important;
 }
 
+#currentPageName {
+  text-align: center;
+  font-weight: bold;
+  font-size: .6em !important;
+  margin-top: 20px;
+  font-family: $font-family-heading !important;
+}
 .main-menu ul li a {
   font-size: 1.7em; 
   padding-right: 25px;
@@ -321,15 +331,15 @@ ul li {
 //actions
 #actions {
   text-align: center;
-  margin: 30px 0;
+  //margin: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $secondary;
-  margin: 0; 
+  //margin: 0; 
   padding: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  //margin-bottom: 20px;
+  //margin-top: 20px;
 }
 
 .action {
@@ -361,7 +371,7 @@ ul li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
-  margin-right: 55px;
+  margin-right: 32px;
   align-items: flex-start;
 }
 
@@ -427,8 +437,8 @@ ul li {
 
 // partner logos banner
 .banner {
-  // add background image
-  background-color: $dark-cream;
+  // add background image?
+  background-color: $primary;
   color: #fff;
   padding: 20px 0;
   z-index: 1;
@@ -436,14 +446,44 @@ ul li {
 
 .banner-container {
   display: flex;
+  align-items: center;
   justify-content: center;
   z-index: 2;
 }
 
 .partner {
-  margin: 0 30px; 
-  max-width: 170px; 
+  margin: 0 60px; 
+  max-width: 350px; 
   max-height: fit-content;
 }
 
 // team page
+
+
+// faq
+.faq.service-summary {
+  border-bottom: 1px solid $peach;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px; 
+}
+
+.toggle-button {
+  border: none;
+  background: none;
+  color: $peach;
+}
+
+.rotate-icon .fa-angle-down {
+  transition: transform 0.3s; 
+}
+
+.rotate-icon[aria-expanded="true"] .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.faq-title {
+  font-family: $font-family-base !important;
+  color: $primary !important;
+  font-weight: bold;
+}

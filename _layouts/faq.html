@@ -1,15 +1,36 @@
 ---
 layout: default
 bodyClass: "page-service"
+id: "faq-page"
 ---
 
-<div class="container pt-0 pb-0">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-	<h1 class="title">{{page.title}}</h1>
-	<div class="content">{{content}}</div>
+{% assign sorted_pages = site.faqs | sort: "order" %}
+
+<div class="container pt-0">
+  <div class="row">
+    <div class="col-12">
+      {% for faq in sorted_pages %}
+      <div class="faq service-summary">
+        <div class="faq-content">
+          <div class="row">
+            <div class="col-10">
+              <h2 class="service-title faq-title">{{ faq.title }}</h2>
+              <p class="description">{{ faq.description }}</p>
+            </div>
+            <div class="col-2 text-right">
+              <button class="toggle-button rotate-icon" data-toggle="collapse" data-target="#faq-{{ forloop.index }}">
+                <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div id="faq-{{ forloop.index }}" class="collapse">
+            <div class="answer">{{ faq.content }}</div>
+          </div>
+        </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
+
+  
