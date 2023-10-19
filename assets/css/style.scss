@@ -186,7 +186,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
+  width: 90%; 
   padding: 10px; 
 }
 
@@ -371,7 +371,7 @@ ul li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
-  margin-right: 32px;
+  margin-right: 20px;
   align-items: flex-start;
 }
 
@@ -421,13 +421,16 @@ ul li {
 }
 
 .sub-footer {
+  display: flex;
   background-color: $primary; 
   color: $white; 
 }
 
 .sub-footer-inner {
   background-color: $primary !important;
-  color: $white; 
+  color: $white;
+  margin-left: 200px;
+  margin-right: 50px; 
 }
 
 .copyright {
