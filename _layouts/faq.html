@@ -20,9 +20,7 @@ id: "faq-page"
               <p class="description">{{ faq.description }}</p>
             </div>
             <div class="col-2 text-right">
-              <button class="toggle-button">
-                <i id="icon-{{ forloop.index }}" class="fa fa-angle-down fa-3x rotate-icon" aria-hidden="true" style="color: #D8AC6C; transition: transform 0.3s ease-in-out;"></i>
-              </button>
+              <i id="icon-{{ forloop.index }}" class="fa fa-angle-down fa-3x rotate-icon" aria-hidden="true" style="color: #D8AC6C; transition: transform 0.3s ease-in-out; cursor: pointer;"></i>
             </div>
           </div>
           <div id="faq-{{ forloop.index }}" class="collapse">
@@ -35,18 +33,18 @@ id: "faq-page"
   </div>
 </div>
 
-
-<!-- make the title area and icon clickable for the toggle, then rotate the icon-->
+<!-- Make the title area and icon clickable for the toggle, then rotate the icon -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const faqTitles = document.querySelectorAll(".faq-title");
+    const faqItems = document.querySelectorAll(".faq-content");
   
-    faqTitles.forEach((title) => {
-      title.addEventListener("click", () => {
-        const targetId = title.getAttribute("data-target");
-        const target = document.querySelector(targetId);
-        const icon = document.querySelector(`#icon-${targetId.split("-")[1]}`); // Select the icon
-  
+    faqItems.forEach((item) => {
+      const title = item.querySelector(".faq-title");
+      const icon = item.querySelector(".rotate-icon");
+      const targetId = title.getAttribute("data-target");
+      const target = document.querySelector(targetId);
+
+      item.addEventListener("click", () => {
         if (target.style.display === "block") {
           target.style.display = "none";
           icon.style.transform = "rotate(0deg)";
@@ -57,5 +55,6 @@ id: "faq-page"
       });
     });
   });
-  </script>
+</script>
+
   
