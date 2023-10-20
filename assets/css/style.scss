@@ -466,27 +466,32 @@ ul li {
 // faq
 .faq.service-summary {
   border-bottom: 1px solid $peach;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 15px;
   margin-bottom: 15px; 
 }
 
-.toggle-button {
-  border: none;
-  background: none;
-  color: $peach;
-}
-
-.rotate-icon .fa-angle-down {
-  transition: transform 0.3s; 
-}
-
-.rotate-icon[aria-expanded="true"] .fa-angle-down {
-  transform: rotate(180deg);
+.faq-content-toggle {
+  cursor: pointer;
 }
 
 .faq-title {
   font-family: $font-family-base !important;
   color: $primary !important;
   font-weight: bold;
+  cursor: pointer;
+}
+
+[data-toggle="collapse"].collapsed .rotate-icon .fa-angle-down {
+  transform: rotate(0deg);
+}
+
+[data-toggle="collapse"]:not(.collapsed) .rotate-icon .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.toggle-button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
