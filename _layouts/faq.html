@@ -37,24 +37,38 @@ id: "faq-page"
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const faqItems = document.querySelectorAll(".faq-content");
-  
+
     faqItems.forEach((item) => {
       const title = item.querySelector(".faq-title");
       const icon = item.querySelector(".rotate-icon");
       const targetId = title.getAttribute("data-target");
       const target = document.querySelector(targetId);
 
-      item.addEventListener("click", () => {
-        if (target.style.display === "block") {
-          target.style.display = "none";
-          icon.style.transform = "rotate(0deg)";
-        } else {
-          target.style.display = "block";
-          icon.style.transform = "rotate(180deg)";
-        }
+      title.addEventListener("click", () => {
+        toggleContent(target, icon);
+      });
+
+      icon.addEventListener("click", () => {
+        toggleContent(target, icon);
+      });
+
+      item.addEventListener("click", (e) => {
+        // Prevent the click event from propagating to the parent container so the user can still select/copy stuff
+        e.stopPropagation();
       });
     });
+
+    function toggleContent(target, icon) {
+      if (target.style.display === "block") {
+        target.style.display = "none";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        target.style.display = "block";
+        icon.style.transform = "rotate(180deg)";
+      }
+    }
   });
 </script>
+
 
   
