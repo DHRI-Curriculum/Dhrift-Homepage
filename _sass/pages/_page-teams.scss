@@ -1,4 +1,5 @@
 .page-teams {
+  background-color: #FFF9F4;
   .team-summary {
     display: flex;
     flex-wrap: wrap;
@@ -17,15 +18,20 @@
       flex: 1;
       h2 {
         margin: 0;
-        font-size: 22px;
-        font-weight: normal;
+        font-size: 26px;
+        font-weight: bold;
+        color: #614F42 !important;
       }
       p {
-        color: $black;
+        color: #614F42;
         text-transform: uppercase;
         margin: 0;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
+        font-weight: bold;
+      }
+      a {
+        color: #614F42 !important;
       }
     }
     .team-content {
@@ -35,7 +41,6 @@
   }
 
   .team-summary-large {
-    background-color: $white-offset;
     padding: 30px;
     border-radius: 3px;
     .team-image {

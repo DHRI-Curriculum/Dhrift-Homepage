@@ -178,15 +178,11 @@ ul li {
   width: 100%;
 }
 
-.logo-container {
-  //margin-right: auto !important;
-}
-
 .top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; 
+  width: 95%; 
   padding: 10px; 
 }
 
@@ -283,8 +279,6 @@ ul li {
     transform: rotate();
   }
 }
-
-
 
 //home page stuff
 .intro-container {
@@ -461,7 +455,13 @@ ul li {
 }
 
 // team page
+.team-name {
+  color: $primary !important;
+}
 
+.team {
+  color: $primary !important;
+}
 
 // faq
 .faq.service-summary {
