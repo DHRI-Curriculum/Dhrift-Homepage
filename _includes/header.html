@@ -1,12 +1,16 @@
 <div class='header'>
-  <div class="container">
-    <div class="logo">
-      <a href="{{ site.baseurl }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
+  <div class="container-fluid">
+    <div class="top-row">
+      <div class="logo">
+        <a href="https://dhrift.org"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | absolute_url }}" /></a>
+      </div>
+      <div class="navigation">
+        {% include main-menu.html %}
+        {% include hamburger.html %}
+      </div>
     </div>
-    <div class="logo-mobile">
-      <a href="{{ site.baseurl }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
+    <div class="page-name">
+      <h1 id="currentPageName"></h1>
     </div>
-    {% include main-menu.html %}
-    {% include hamburger.html %}
   </div>
 </div>

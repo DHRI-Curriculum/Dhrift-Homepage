@@ -3,12 +3,13 @@ permalink: pretty
 title: 'DHRIFT'
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
+  mobile: "images/logo/DHRIFT-Logo-ltbg-tagline.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+  desktop: "images/logo/DHRIFT-Logo-ltbg-tagline.png"
+  desktop_height: "120px"
+  desktop_width: "370px"
+  light: "images/logo/DHRIFT-Logo-dkbg.png"
 
 home:
   limit_services: 6
@@ -35,8 +36,8 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
-plugins:
-  - jekyll-environment-variables
+# plugins:
+  # - jekyll-environment-variables
 
 exclude:
   - Gemfile

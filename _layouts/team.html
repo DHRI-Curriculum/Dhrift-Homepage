@@ -8,16 +8,11 @@ bodyClass: "page-team"
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="team team-single">
-	<h1 class="title">{{page.title}}</h1>
 	<div class="content">{{content}}</div>
-
       </div>
     </div>
     <div class="col-12 col-md-4">
       <img style="max-width:100%;height: auto;margin:1em" alt="Headshot of {{ page.title }}" src="{% if page.image-full %}{{ page.image-full | absolute_url }}{% else %}{{ page.image | absolute_url }}{% endif %}" />
     </div>
-
-
   </div>
-
 </div>

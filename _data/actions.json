@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Learn",
+      "description": "with our core curriculum",
+        "icon": "dandelion",
+        "alt": "DHRIFT's logo, a dandelion.",
+        "link": "https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops"
+    },
+        {
+      "title": "Teach",
+      "description": "with our open-source materials",
+        "icon": "dandelion",
+        "alt": "DHRIFT's logo, a dandelion.",
+        "link": "/teach"
+    },
+    {
+      "title": "Create",
+      "description": "your own workshops",
+        "icon": "dandelion",
+        "alt": "DHRIFT's logo, a dandelion.",
+        "link":"/create"
+    },
+    {
+        "title": "Build",
+        "description": "your own institute",
+          "icon": "dandelion",
+          "alt": "DHRIFT's logo, a dandelion.",
+          "link":"/build"
+      }
+  ]
+  

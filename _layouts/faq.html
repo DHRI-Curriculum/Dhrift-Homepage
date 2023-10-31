@@ -1,15 +1,74 @@
 ---
 layout: default
 bodyClass: "page-service"
+id: "faq-page"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-	<h1 class="title">{{page.title}}</h1>
-	<div class="content">{{content}}</div>
+{% assign sorted_pages = site.faqs | sort: "order" %}
+
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-12">
+      {% for faq in sorted_pages %}
+      <div class="faq service-summary">
+        <div class="faq-content">
+          <div class="row">
+            <div class="col-10">
+              <h2 class="service-title faq-title" data-toggle="collapse" data-target="#faq-{{ forloop.index }}">
+                {{ faq.title }}
+              </h2>
+              <p class="description">{{ faq.description }}</p>
+            </div>
+            <div class="col-2 text-right">
+              <i id="icon-{{ forloop.index }}" class="fa fa-angle-down fa-3x rotate-icon" aria-hidden="true" style="color: #D8AC6C; transition: transform 0.3s ease-in-out; cursor: pointer;"></i>
+            </div>
+          </div>
+          <div id="faq-{{ forloop.index }}" class="collapse">
+            <div class="answer">{{ faq.content }}</div>
+          </div>
+        </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
+
+<!-- Make the title area and icon clickable for the toggle, then rotate the icon -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-content");
+
+    faqItems.forEach((item) => {
+      const title = item.querySelector(".faq-title");
+      const icon = item.querySelector(".rotate-icon");
+      const targetId = title.getAttribute("data-target");
+      const target = document.querySelector(targetId);
+
+      title.addEventListener("click", () => {
+        toggleContent(target, icon);
+      });
+
+      icon.addEventListener("click", () => {
+        toggleContent(target, icon);
+      });
+
+      item.addEventListener("click", (e) => {
+        // Prevent the click event from propagating to the parent container so the user can still select/copy stuff
+        e.stopPropagation();
+      });
+    });
+
+    function toggleContent(target, icon) {
+      if (target.style.display === "block") {
+        target.style.display = "none";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        target.style.display = "block";
+        icon.style.transform = "rotate(180deg)";
+      }
+    }
+  });
+</script>
+
+
+  
