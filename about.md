@@ -5,7 +5,7 @@ description: About DHRIFT
 bodyClass: page-about
 ---
 
-Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT) is a platform and curriculum for teaching the digital humanities at local institutions. DHRIFT enables the ready creation of websites for workshops, institutes, and intensives. DHRIFT curriculum has been extensively tested in the classroom and has been used as the basis for workshops and classes at over 20 colleges and universities across the United States
+Digital Humanities Resource Infrastructure for Teaching Technology (DHRIFT) is a platform and curriculum for teaching the digital humanities at local institutions. DHRIFT enables the ready creation of websites for workshops, institutes, and intensives. DHRIFT curriculum has been extensively tested in the classroom and has been used as the basis for workshops and classes at over 20 colleges and universities across the United States. 
 
 ## DHRIFT highlights
 
