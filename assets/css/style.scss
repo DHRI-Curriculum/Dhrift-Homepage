@@ -389,29 +389,46 @@ ul li {
 
 // footer stuff
 .footer {
-  background-color: $primary; 
-  color: $white; 
+  background-color: $primary;
+  color: $white;
   padding: 20px 0;
-}
 
-.menu {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.menu li {
-  margin-left: 20px;
-}
+  .footer-inner {
+    display: flex;
+    align-items: center;
 
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.4em; 
-}
+    .logo {
+      img {
+        max-width: 100%;
+      }
+    }
 
-.menu a:hover {
-  text-decoration: underline; 
+    .menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin-right: 100px;
+
+      li {
+        margin-left: 200px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .sub-footer {
