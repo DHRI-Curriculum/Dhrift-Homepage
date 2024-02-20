@@ -2,30 +2,38 @@
     {
         "title": "Learn",
       "description": "with our core curriculum",
-        "icon": "dandelion",
+        "icon": "school-solid",
         "alt": "DHRIFT's logo, a dandelion.",
-        "link": "https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops"
+        "link": "https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops",
+        "image": "images/dhrift_site.png",
+        "message": "The DHRIFT platform provides an interactive learning experience for humanists, including code editors, challenges, and quizzes, all right in the browser."
     },
         {
       "title": "Teach",
       "description": "with our open-source materials",
-        "icon": "dandelion",
+        "icon": "chalkboard-user",
         "alt": "DHRIFT's logo, a dandelion.",
-        "link": "/teach"
+        "link": "/teach",
+        "image": "images/teach.jpg",
+        "message": "DHRIFT Core presents a vetted core set of interactive curriculum that is built for both synchronous and asynchronous instruction."
     },
     {
       "title": "Create",
       "description": "your own workshops",
-        "icon": "dandelion",
+        "icon": "creative-commons",
         "alt": "DHRIFT's logo, a dandelion.",
-        "link":"/create"
+        "link":"/create",
+        "image": "images/create.jpg",
+        "message": "DHRIFT is designed for extensibility, allowing you to easily create your own workshops and share them with the community."
     },
     {
         "title": "Build",
         "description": "your own institute",
-          "icon": "dandelion",
+          "icon": "building",
           "alt": "DHRIFT's logo, a dandelion.",
-          "link":"/build"
+          "link":"/build",
+          "image": "images/build.jpg",
+          "message": "Build and host an institute on DHRIFT, with your own branding and your own choice of workshops as well as a convenient scheduling component."
       }
   ]
   

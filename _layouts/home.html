@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-home"
+bodyClass: home
 ---
 <!--
 <section class="intro">
@@ -26,23 +26,33 @@ bodyClass: "page-home"
 {% endif %}
 -->
 
+
 {% if site.data.actions %}
 <section id="actions">
-  <div class="action">
-    <!-- First action centered -->
-    <a href="https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops" class="action-button" target="_blank">
-    <h3>Learn</h3>
-    </a>
-    <p>with our core curriculum</p>
-  </div>
-  <div class="action-row">
-    <!-- Following actions in a row -->
-    {% for action in site.data.actions offset:1 %}
-    <div class="action">
-      <a href="{{action.link}}" class="action-button" target="_blank"><h3>{{ action.title }}</h3></a>
-      <p>{{ action.description }}</p>
+  <div class="action-container">
+    <div class="grid-container">
+      {% for action in site.data.actions %}
+        <div class="action" data-image="{{ action.image }}" data-message="{{ action.message }}">
+          <div class="action-inner">
+            <div class="action-icon">
+              <img src="/images/{{ action.icon }}.svg" alt="{{ action.alt }}">
+            </div>
+            <div class="action-content">
+              <a href="{{ action.link }}" class="action-button" target="_blank">
+                <h3>{{ action.title }}</h3>
+              </a>
+              <p>{{ action.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+    <div class="image-container">
+      <div class="message-container">
+        <p class="message-content" id="messageContent">Default Message</p>
+      </div>
+      <img src="images/The_Graduate_Center_hero.jpg" alt="CUNY Graduate Center" id="mainImage">
+    </div>
   </div>
 </section>
 {% endif %}
@@ -73,11 +83,11 @@ bodyClass: "page-home"
   </div>
 </section>
 
-<!-- Randomly rotate the dandelions! -->
+<!-- Rotate the dandelions and change actions content area according to button hover-->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const featureIcons = document.querySelectorAll(".feature-image");
-  const usedRotationAngles = new Set(); // Keep track of used angles
+  const usedRotationAngles = new Set(); // Keep track of used dandelion angles
 
   featureIcons.forEach(function (icon) {
     let rotationAngle;
@@ -85,10 +95,42 @@ document.addEventListener("DOMContentLoaded", function () {
     do {
       rotationAngle = Math.floor(Math.random() * 360);
     } while (usedRotationAngles.has(rotationAngle));
-	
+
     usedRotationAngles.add(rotationAngle);
     icon.style.transform = `rotate(${rotationAngle}deg)`;
   });
+
+  // Store the default action image and message
+  let currentImage = $('#mainImage').attr('src');
+  let defaultMessage = "Digital Humanities Infrastructure for Teaching (DHRIFT) is a project of the CUNY Graduate Center's Digital Initiatives."; 
+
+  // Set the default message
+  $('#messageContent').text(defaultMessage);
+
+  let hoverTimeout;
+
+  // Image change on button hover with message
+  $('.action-button').hover(
+    function () {
+      let imageUrl = $(this).closest('.action').data('image');
+      let message = $(this).closest('.action').data('message');
+
+      clearTimeout(hoverTimeout);
+
+      // set timeout
+      hoverTimeout = setTimeout(function () {
+        // Check if the new image is different from the current one and update
+        if (imageUrl !== currentImage) {
+          $('#mainImage').attr('src', imageUrl);
+          currentImage = imageUrl;
+          $('#messageContent').text(message); 
+        }
+      }, 300);
+    },
+    function () {
+      clearTimeout(hoverTimeout); // Clear the timeout on mouse out
+    }
+  );
 });
-	</script>
+</script>
 {% endif %}
