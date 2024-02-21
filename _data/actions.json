@@ -13,7 +13,7 @@
       "description": "with our open-source materials",
         "icon": "chalkboard-user",
         "alt": "DHRIFT's logo, a dandelion.",
-        "link": "/teach",
+        "link": "/teach.html",
         "image": "images/teach.jpg",
         "message": "DHRIFT Core presents a vetted core set of interactive curriculum that is built for both synchronous and asynchronous instruction."
     },
