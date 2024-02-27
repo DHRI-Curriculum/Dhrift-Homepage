@@ -13,7 +13,7 @@ DHRIFT has learning pathways for building and practicing foundational digital sk
 
 Data Literacy
 
-![Data Literacy Workshops](images/pathways/literacy.png "Data Literacy")
+![Data Literacy Workshops](/images/pathways/literacy.png "Data Literacy")
 
 Quantitative Analysis
 
