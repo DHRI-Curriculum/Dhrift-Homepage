@@ -27,32 +27,40 @@ bodyClass: home
 -->
 
 
+<section id = "meet">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h1 class="meet-title">Meet DHRIFT</h1>
+        <p class="meet-description">Digital Humanities Infrastructure for Teaching Technology</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% if site.data.actions %}
 <section id="actions">
   <div class="action-container">
-    <div class="grid-container">
-      {% for action in site.data.actions %}
-        <div class="action" data-image="{{ action.image }}" data-message="{{ action.message }}">
-          <div class="action-inner">
+    {% for action in site.data.actions %}
+      <div class="action" data-image="{{ action.image }}">
+        <div class="action-inner {% cycle 'left', 'right' %}">
+          <div class="content-container {% if forloop.last %}last{% endif %}">
             <div class="action-icon">
               <img src="/images/{{ action.icon }}.svg" alt="{{ action.alt }}">
             </div>
-            <div class="action-content">
-              <a href="{{ action.link }}" class="action-button" target="_blank">
+            <a href="{{ action.link }}" class="action-button">
+              <div class="button-content">
                 <h3>{{ action.title }}</h3>
-              </a>
-              <p>{{ action.description }}</p>
-            </div>
+              </div>
+            </a>
+            <p class="action-description">{{ action.description }}</p>
+          </div>
+          <div class="image-container">
+            <img src="{{ action.image }}" alt="{{ action.title }}">
           </div>
         </div>
-      {% endfor %}
-    </div>
-    <div class="image-container">
-      <div class="message-container">
-        <p class="message-content" id="messageContent">Default Message</p>
       </div>
-      <img src="images/The_Graduate_Center_hero.jpg" alt="CUNY Graduate Center" id="mainImage">
-    </div>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
@@ -61,29 +69,29 @@ bodyClass: home
 {% if site.data.features %}
 <section id="features">
   <div class="strip strip-grey">
-    
-      <div class="feature-container row justify-content-center">
+    <div class="container-fluid">
+      <div class="row feature-container">
 
-	{% for feature in site.data.features %}
-	<div class="col-12 col-md-6 col-lg-4 mb-2">
-	  <div class="feature">
-	    {% if feature.icon %}
-	    <div class="feature-image">
-			<img src="/images/dandelion.png" alt="{{ feature.alt }}">
-	    </div>
-	    {% endif %}
-	    <h2 class="feature-title">{{ feature.title }}</h2>
-	    <div class="feature-content">{{ feature.description }}</div>
-	  </div>
-	</div>
-	{% endfor %}
+        {% for feature in site.data.features %}
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+          <div class="feature">
+            {% if feature.icon %}
+            <div class="feature-image">
+              <img src="/images/dandelion.png" alt="{{ feature.alt }}">
+            </div>
+            {% endif %}
+            <h2 class="feature-title">{{ feature.title }}</h2>
+            <div class="feature-content">{{ feature.description }}</div>
+          </div>
+        </div>
+        {% endfor %}
 
       </div>
     </div>
   </div>
 </section>
 
-<!-- Rotate the dandelions and change actions content area according to button hover-->
+<!-- Rotate the dandelions!-->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const featureIcons = document.querySelectorAll(".feature-image");
@@ -98,39 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     usedRotationAngles.add(rotationAngle);
     icon.style.transform = `rotate(${rotationAngle}deg)`;
+    });
   });
-
-  // Store the default action image and message
-  let currentImage = $('#mainImage').attr('src');
-  let defaultMessage = "Digital Humanities Infrastructure for Teaching (DHRIFT) is a project of the CUNY Graduate Center's Digital Initiatives."; 
-
-  // Set the default message
-  $('#messageContent').text(defaultMessage);
-
-  let hoverTimeout;
-
-  // Image change on button hover with message
-  $('.action-button').hover(
-    function () {
-      let imageUrl = $(this).closest('.action').data('image');
-      let message = $(this).closest('.action').data('message');
-
-      clearTimeout(hoverTimeout);
-
-      // set timeout
-      hoverTimeout = setTimeout(function () {
-        // Check if the new image is different from the current one and update
-        if (imageUrl !== currentImage) {
-          $('#mainImage').attr('src', imageUrl);
-          currentImage = imageUrl;
-          $('#messageContent').text(message); 
-        }
-      }, 300);
-    },
-    function () {
-      clearTimeout(hoverTimeout); // Clear the timeout on mouse out
-    }
-  );
-});
-</script>
+  </script>
 {% endif %}
