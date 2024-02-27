@@ -17,8 +17,17 @@ Data Literacy
 
 Quantitative Analysis
 
+![Quantitative Analysis Workshops](/images/pathways/quant.png "Quantitative Analysis")
+
+
 Web Development
+
+![Web Development](/images/pathways/web_dev.png "Web Development")
 
 Python
 
+![Python](/images/pathways/python.png "Python")
+
 Data Visualization
+
+![Data Visualization](/images/pathways/dataviz.png "Data Visualization")
