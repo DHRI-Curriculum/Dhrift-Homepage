@@ -1,13 +1,11 @@
 ---
-title: Teach
+title: Teach with DHRIFT
 layout: page
 description: Teach
 permalink: "/teach/"
 
 
 ---
-
-# Teach with DHRIFT
 
 DHRIFT Core presents a vetted core set of interactive curriculum with embedded code-editor that is ready for synchronous and asynchronous instruction.
 
