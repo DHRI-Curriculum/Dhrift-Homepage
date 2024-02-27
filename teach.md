@@ -3,6 +3,8 @@ title: Teach
 layout: page
 description: Teach
 permalink: "/teach/"
+
+
 ---
 
 **DHRIFT** (Digital Humanities Resource Infrastructure for Teaching Technology) is an open educational resource (OER) and publication platform for teaching digital skills. Designed by humanities scholars for humanities scholars, DHRIFT includes a core set of reviewed and tested curricula on common digital humanities (DH) topics, enables the ready creation of websites to support workshops, institutes, and intensives, and provides a minimal computing, accessibility-aware, and interactive functionalities.DHRIFT's core curricula benefits from extensive classroom testing and has been used as the basis for workshops and classes at more than 20 colleges and universities across the United States.
