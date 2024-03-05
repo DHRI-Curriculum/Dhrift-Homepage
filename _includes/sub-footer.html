@@ -3,14 +3,17 @@
     <div class="row">
       <div class="col-12">
         <div class="sub-footer-inner">
-          {% if site.data.social %}
-            {% include social.html %}
-          {% endif %}
+          <div class="logo-container">
+            {% if site.data.social %}
+              {% include social.html %}
+            {% endif %}
+          </div>
           {% if site.data.seo.copyright_text %}
-          <div class="copyright">{{ site.data.seo.copyright_text }}</div>
+            <div class="copyright">{{ site.data.seo.copyright_text }}</div>
           {% endif %}
         </div>
       </div>
     </div>
   </div>
 </div>
+

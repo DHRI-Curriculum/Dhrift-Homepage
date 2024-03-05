@@ -85,6 +85,7 @@ $sub-footer-text-color: $white;
 body {
   font-size: 16px;
   line-height: 1.2;
+  overflow-x: hidden;
   font-family: $font-family-base;
   @include media-breakpoint-up(md) {
     font-size: 16px;
@@ -111,6 +112,33 @@ ul li {
 
 .content {
   margin-top:-40px;
+}
+
+// hamburger menu responsiveness
+@media (max-width: 990px) {
+  #toggle-main-menu-mobile {
+    display: block; 
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  
+  #toggle-main-menu-mobile.active + .main-menu {
+    display: block;
+  }
+}
+
+#mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+  z-index: 1000;
 }
 
 // header stuff
@@ -140,12 +168,12 @@ ul li {
 }
 
 .header-home {
-  background-image: url('/images/header-bkg.png');
-  background-size: 100% 70%;
+  background-image: url('/images/headerbkg4.png');
+  background-size: 100% 85%;
   background-repeat: no-repeat;
   background-position: center top; 
-  filter: brightness(115%);
-  background-color: $dark-cream !important;
+  //filter: brightness(115%);
+  //background-color: $dark-cream !important;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -153,7 +181,7 @@ ul li {
 
 .header-home::before {
   content: "";
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -290,15 +318,14 @@ ul li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: (brightness(85%));
+  filter: brightness(85%);
   position: relative;
 }
 
-//overlay feature container with light blue to make it look more like designer doc
 .feature-container::before {
   content: "";
   background: rgba(152, 211, 208, 0.25);
-  pointer-events: none; 
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -308,23 +335,20 @@ ul li {
 }
 
 .feature {
-  border: none; 
+  border: none;
   outline: none;
-  margin-left: 60px; 
-  margin-right: 60px; 
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 1.4em;
-  // make fully transparent background
   background-color: rgba(255, 255, 255, 0.0);
 
   .feature-title {
     font-weight: bold;
     font-size: 1.5em;
-    //margin-bottom: 10px;
     color: $white;
   }
 
   .feature-content {
-    //font-size: 1.2em;
     margin-top: -2px;
     color: white;
   }
@@ -336,6 +360,32 @@ ul li {
   }
 }
 
+@media (max-width: 767px) {
+  .feature-container {
+    padding: 10px;
+  }
+
+  .feature {
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .feature {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 // meet DHRIFT section
 #meet {
@@ -346,7 +396,7 @@ ul li {
 }
 
 .meet-title {
-  font-size: 3em;
+  font-size: 3.8em;
   font-family: $font-family-heading !important;
   //font-weight: bold;
   color: $primary; 
@@ -354,7 +404,7 @@ ul li {
 }
 
 .meet-description {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: $primary; 
 }
 
@@ -377,7 +427,8 @@ ul li {
 .action {
   display: flex;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  margin-top: 40px;
   justify-content: space-between;
 }
 
@@ -397,13 +448,14 @@ ul li {
 
 .action-button {
   display: inline-block;
-  padding: 15px 30px; 
+  padding: 10px 20px; 
   background-color: $white;
   color: $primary;
   text-decoration: none;
   border: $primary 2px solid;
-  font-size: 1.1em;
+  font-size: 1.3em;
   transition: background-color 0.3s;
+  align-self: start;
 }
 
 .action-button:hover {
@@ -438,9 +490,10 @@ ul li {
 }
 
 .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  margin-top: 60px;
 }
 
 .action-inner.left {
@@ -451,7 +504,6 @@ ul li {
   flex-direction: row-reverse;
 }
 
-
 .content-container {
   display: flex;
   flex-direction: column;
@@ -459,6 +511,15 @@ ul li {
   align-items: center;
   height: 100%;
   margin-bottom: 200px;
+  margin-right: 20px;
+}
+
+.action-title {
+  font-size: 2.7em !important;
+  text-align: left;
+  align-self: start;
+  color: $primary;
+  margin-bottom: 20px;
 }
 
 .content-container.last {
@@ -473,14 +534,15 @@ ul li {
 
 .button-content h3 {
   text-align: left;
-  font-size: 2.5em !important;
+  font-size: 1.5em !important;
 }
 
 .action-description {
   margin-top: 10px;
-  text-align: center;
-  font-size: 1.2em !important;
+  text-align: left;
+  font-size: 1.35em !important;
   //white-space: pre-line;
+  margin-bottom: 40px;
 }
 
 // itty bitty screens
@@ -491,19 +553,26 @@ ul li {
 
   .action-inner.left .content-container,
   .action-inner.right .content-container {
-    margin-bottom: 20px; 
+    margin-bottom: 120px; 
+    margin-left: 20px;
+    overflow: visible;
   }
 
   .content-container,
   .image-container {
     width: 100%; 
-    margin-left: 0; 
+    margin-left: 20px; 
     margin-bottom: 20px; 
   }
 
   .action-icon img {
     max-width: 70px; 
     max-height: 70px; 
+  }
+
+  .content-container.last
+  {
+    margin-bottom: -20px; 
   }
 }
 
@@ -524,7 +593,7 @@ ul li {
   .footer-inner {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
 
     .logo {
       img {
@@ -559,16 +628,18 @@ ul li {
 
 @media (max-width: 768px) {
   .footer-inner {
-    justify-content: space-between; 
+    //justify-content: space-between; 
     padding: 10px; 
 
     .logo {
       margin-bottom: 10px;
+      display: none;
     }
 
     .menu {
       flex-basis: 100%; 
-      justify-content: flex-end; 
+      justify-content: flex-end;
+      align-items: center; 
 
       li {
         margin: 0 10px;
@@ -588,27 +659,40 @@ ul li {
 .sub-footer-inner {
   background-color: $primary !important;
   color: $white;
-  margin-left: 160px;
-  margin-right: 90px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; 
 }
 
 .copyright {
   background-color: $primary !important;
   font-size: 1.1em !important;
+  width: 100%;
+  text-align: center; 
+  margin-top: 10px; 
 }
 
 @media (max-width: 768px) {
-  .sub-footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .sub-footer-inner {
     margin: 20px; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .logo-container {
+    margin-bottom: 10px; 
+  }
+
+  .copyright {
+    order: 1;
   }
 }
-
 
 // partner logos banner
 .banner {
@@ -621,26 +705,41 @@ ul li {
 .banner-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   z-index: 2;
 }
 
 .partner {
-  margin: 0 60px;
-  max-width: 350px;
+  margin: 0 80px;
+  width: 350px;
   max-height: fit-content;
+  transition: max-width 0.3s;
 }
 
 @media (max-width: 768px) {
   .banner-container {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
   }
 
   .partner {
     margin: 10px 0;
+    max-width: 70%;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1352px) {
+  .banner-container {
+    justify-content: space-between;
+  }
+
+  .partner {
+    margin: 0;
+    max-width: 60%;
+  }
+}
+
+
 
 // team page
 .team-name {

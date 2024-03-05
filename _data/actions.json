@@ -1,39 +1,39 @@
 [
     {
-        "title": "Learn",
+        "title": "Begin Learning",
       "description": "The DHRIFT platform provides open-source, interactive learning for humanists. Each workshop includes code editors, challenges, and quizzes, all right in the browser.",
         "icon": "school-solid",
         "alt": "DHRIFT's logo, a dandelion.",
         "link": "https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops",
         "image": "images/learn.gif",
-        "message": ""
+        "message": "Learn with DHRIFT"
     },
         {
-      "title": "Teach",
+      "title": "Begin Teaching",
       "description": "DHRIFT Core presents a vetted core set of interactive curriculum that is built for both synchronous and asynchronous instruction.",
         "icon": "chalkboard-user",
         "alt": "DHRIFT's logo, a dandelion.",
         "link": "/teach",
         "image": "images/teach.jpg",
-        "message": ""
+        "message": "Teach with DHRIFT"
     },
     {
-      "title": "Create",
+      "title": "Begin Creating",
       "description": "DHRIFT is designed for extensibility, allowing you to easily create your own workshops and share them with the community.",
         "icon": "creative-icon",
         "alt": "DHRIFT's logo, a dandelion.",
         "link":"/create",
         "image": "images/create.jpg",
-        "message": ""
+        "message": "Create with DHRIFT"
     },
     {
-        "title": "Build",
+        "title": "Begin Building",
         "description": "Build and host an institute on DHRIFT, with your own branding, your own choice of workshops, and a convenient scheduling component.",
           "icon": "building",
           "alt": "DHRIFT's logo, a dandelion.",
           "link":"/build",
           "image": "images/build.jpg",
-          "message": ""
+          "message": "Build with DHRIFT"
       }
   ]
   
