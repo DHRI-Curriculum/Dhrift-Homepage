@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (pageName.toLowerCase() === "faq") {
     pageName = "Frequently Asked Questions";
-    console.log("pageName: " + pageName);
   }
 
   let currentPageNameElement = document.getElementById("currentPageName");
