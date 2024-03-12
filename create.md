@@ -2,7 +2,7 @@
 title: Create with DHRIFT
 layout: page
 description: Create
-permalink: "/Create/"
+permalink: "/create/"
 
 
 ---
