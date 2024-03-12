@@ -4,8 +4,8 @@
       "description": "The DHRIFT platform provides open-source, interactive learning for humanists. Each workshop includes code editors, challenges, and quizzes, all right in the browser.",
         "icon": "school-solid",
         "alt": "DHRIFT's logo, a dandelion.",
-        "link": "https://app.dhrift.org/workshops/?user=dhri-curriculum&repo=dhrift-site-template&wUser=dhri-curriculum&wGitRepo=workshops",
-        "image": "images/learn.gif",
+        "link": "https://app.dhrift.org/workshops/?instUser=dhri-curriculum&instRepo=dhrift-site-template&user=dhri-curriculum&repo=workshops",
+        "image": "images/learn_with.png",
         "message": "Learn with DHRIFT"
     },
         {

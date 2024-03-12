@@ -3,7 +3,6 @@ title: How to Learn with DHRIFT
 layout: page
 description: Learn More
 permalink: "/learn-more/"
-programming_language: 'computer'
 
 
 
