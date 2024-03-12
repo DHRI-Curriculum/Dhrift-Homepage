@@ -143,11 +143,11 @@ ul li {
 
 // header stuff
 .header {
-  background-image: url('/images/header-bkg.png');
+  background-image: url('/images/header_general.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  filter: (brightness(115%));
+  background-position: center bottom;
+  //filter: (brightness(115%));
   background-color: $dark-cream;
   display: flex;
   justify-content: space-between;
@@ -259,13 +259,15 @@ ul li {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 #intro-text {
   font-family: $font-family-heading !important;
   color: $primary !important;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2em;
 }
 
@@ -371,7 +373,24 @@ ul li {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+  }
+
+  .feature {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 772px) {
   .feature-container {
     display: flex;
     flex-direction: column;
@@ -427,7 +446,7 @@ ul li {
 .action {
   display: flex;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   margin-top: 40px;
   justify-content: space-between;
 }
@@ -440,7 +459,7 @@ ul li {
 .content-container,
 .image-container {
   width: 50%; 
-  overflow: hidden;
+  overflow: visible;
   margin-left: 40px;
   max-height: 400px;
   min-height: 100px;
@@ -496,14 +515,6 @@ ul li {
   margin-top: 60px;
 }
 
-.action-inner.left {
-  flex-direction: row;
-}
-
-.action-inner.right {
-  flex-direction: row-reverse;
-}
-
 .content-container {
   display: flex;
   flex-direction: column;
@@ -545,15 +556,29 @@ ul li {
   margin-bottom: 40px;
 }
 
-// itty bitty screens
+// only apply the alternating layout on larger screens
+@media (min-width: 768px) {
+  .action-inner.left {
+    flex-direction: row;
+  }
+  
+  .action-inner.right {
+    flex-direction: row-reverse;
+  }
+  }
+
+// itty bitty screens, form a single columnn
 @media (max-width: 767px) {
   .action-inner {
     flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .action-inner.left .content-container,
   .action-inner.right .content-container {
-    margin-bottom: 120px; 
+    margin-bottom: 30px; 
     margin-left: 20px;
     overflow: visible;
   }
@@ -561,8 +586,9 @@ ul li {
   .content-container,
   .image-container {
     width: 100%; 
-    margin-left: 20px; 
-    margin-bottom: 20px; 
+    margin-left: 20px;
+    margin-top: -30px; 
+    //margin-bottom: 20px; 
   }
 
   .action-icon img {
@@ -734,12 +760,10 @@ ul li {
   }
 
   .partner {
-    margin: 0;
-    max-width: 60%;
+    margin: 10px 0;
+    max-width: 90%;
   }
 }
-
-
 
 // team page
 .team-name {

@@ -27,13 +27,13 @@
         "message": "Create with DHRIFT"
     },
     {
-        "title": "Begin Building",
+        "title": "Begin Growing",
         "description": "Build and host an institute on DHRIFT, with your own branding, your own choice of workshops, and a convenient scheduling component.",
           "icon": "building",
           "alt": "DHRIFT's logo, a dandelion.",
-          "link":"/build",
+          "link":"/grow",
           "image": "images/build.jpg",
-          "message": "Build with DHRIFT"
+          "message": "Grow with DHRIFT"
       }
   ]
   

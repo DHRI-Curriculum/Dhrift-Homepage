@@ -7,7 +7,7 @@ bodyClass: home
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8">
-        <h1 class="meet-title">Meet DHRIFT</h1>
+        <h1 class="meet-title">"Hello, DHRIFT!"</h1>
         <p class="meet-description">Digital Humanities Infrastructure for Teaching Technology</p>
       </div>
     </div>
@@ -19,7 +19,10 @@ bodyClass: home
   <div class="action-container">
     {% for action in site.data.actions %}
       <div class="action" data-image="{{ action.image }}">
-        <div class="action-inner {% cycle 'left', 'right' %}">
+        <div class="action-inner {% cycle 'right', 'left' %}">
+          <div class="image-container">
+            <img src=" /images/{{ action.icon }}.svg" alt="{{ action.title }}">
+          </div>
           <div class="content-container {% if forloop.last %}last{% endif %}">
             <h1 class="action-title">{{ action.message }}</h2>
             <p class="action-description">{{ action.description }}</p>
@@ -28,9 +31,6 @@ bodyClass: home
                 <h3>{{ action.title }}</h3>
               </div>
             </a>
-          </div>
-          <div class="image-container">
-            <img src=" /images/{{ action.icon }}.svg" alt="{{ action.title }}">
           </div>
         </div>
       </div>
