@@ -1,0 +1,24 @@
+[
+    {
+    "title": "Digital Humanities Research Institute",
+    "description": "DHRI Institute 2024. This is a description of the institute.",
+    "image": "/images/dhri.png",
+    "link": "https://app.dhrift.org/inst/?instUser=GC-DRI&instRepo=GCDRI24Schedule"
+    },
+
+    {
+      "title": "Digital Humanities Research Institute",
+      "description": "DHRI Institute 2024. This is a description of the institute.",
+      "image": "/images/dhri.png",
+      "link": "https://app.dhrift.org/inst/?instUser=GC-DRI&instRepo=GCDRI24Schedule"
+      },
+
+      {
+        "title": "Digital Humanities Research Institute",
+        "description": "DHRI Institute 2024. This is a description of the institute.",
+        "image": "/images/dhri.png",
+        "link": "https://app.dhrift.org/inst/?instUser=GC-DRI&instRepo=GCDRI24Schedule"
+        }
+        
+  ]
+  

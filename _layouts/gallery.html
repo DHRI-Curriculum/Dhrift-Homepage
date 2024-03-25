@@ -1,0 +1,24 @@
+---
+layout: default
+id: "gallery-page"
+---
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="gallery-head">Explore a Showcase of Institutes Created with DHRIFT</h1>
+      <div class="card-deck">
+        {% for data in site.data.gallery %}
+          <div class="card">
+            <img src="{{ data.image }}" class="card-img-top" alt="{{ data.title }}" style="max-width: 100%; height: auto;">
+            <div class="card-body">
+              <h5 class="card-title">{{ data.title }}</h5>
+              <p class="card-text">{{ data.description }}</p>
+              <a href="{{ data.link }}" class="visit-button">Visit Institute</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

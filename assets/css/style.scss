@@ -115,7 +115,7 @@ ul li {
 }
 
 // hamburger menu responsiveness
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
   #toggle-main-menu-mobile {
     display: block; 
   }
@@ -754,7 +754,7 @@ ul li {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1352px) {
+@media (min-width: 769px) and (max-width: 1500px) {
   .banner-container {
     justify-content: space-between;
   }
@@ -813,3 +813,40 @@ ul li {
   cursor: pointer;
 }
 
+// gallery
+.visit-button {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: background-color 0.3s;
+  font-size: 1.5em;
+}
+
+.visit-button:hover {
+  background-color: $sky; 
+  color: $primary;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 20px;
+  margin: 10px;
+}
+
+.gallery-head {
+  font-size: 2.3em;
+  font-family: $font-family-heading !important;
+  color: $primary;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
