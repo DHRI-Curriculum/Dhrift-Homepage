@@ -428,11 +428,26 @@ ul li {
 }
 
 // call to action section
+#actions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/dandelion-bkg.png');
+  background-size: cover;
+  background-position: top;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 #actions {
-  background-color: $white;
+  //background-color: $white;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  position: relative;
 }
 
 .action-container {
