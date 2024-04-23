@@ -3,6 +3,7 @@ layout: default
 bodyClass: home
 ---
 
+
 <section id = "meet">
   <div class="container">
     <div class="row justify-content-center">
@@ -64,9 +65,21 @@ bodyClass: home
   </div>
 </section>
 
-<!-- Rotate the dandelions!-->
+<div id="alert" class="alert">
+  <span class="closebtn" onclick="dismissAlert()">&times;</span> 
+  <strong>Join Us</strong> @ the ADHO Digital Humanities Conference 2024! Click <a href="https://dh2024.adho.org/program/workshops/">here</a> for more information.
+</div>
+
+
+<!-- Rotate the dandelions and scroll the alert-->
 <script>
+
+function dismissAlert() {
+  document.getElementById("alert").style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("alert").style.display = "block";
   const featureIcons = document.querySelectorAll(".feature-image");
   const usedRotationAngles = new Set(); // Keep track of used dandelion angles
 
@@ -80,6 +93,24 @@ document.addEventListener("DOMContentLoaded", function () {
     usedRotationAngles.add(rotationAngle);
     icon.style.transform = `rotate(${rotationAngle}deg)`;
     });
+
+// Function to handle alert scrolling
+window.addEventListener('scroll', function() {
+  var alertElement = document.getElementById("alert");
+  var windowHeight = window.innerHeight;
+  var bodyHeight = document.body.scrollHeight;
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  //place the alert at the bottom of the viewport
+  if (scrollPosition > windowHeight) {
+    alertElement.style.position = "fixed";
+    alertElement.style.bottom = "0";
+    alertElement.style.left = "0";
+    alertElement.style.width = "50%";
+  } else {
+    alertElement.style.position = "relative";
+  }
+});
   });
   </script>
 {% endif %}

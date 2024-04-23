@@ -406,6 +406,33 @@ ul li {
   }
 }
 
+// event alert
+.alert {
+  background-color: rgb(237, 219, 122);
+  font-family: $font-family-base;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  margin-left: 25%;
+}
+
+.closebtn {
+  //margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
 // meet DHRIFT section
 #meet {
   margin-top: 50px;
