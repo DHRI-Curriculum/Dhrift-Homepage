@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to handle alert scrolling
 window.addEventListener('scroll', function() {
-  var alertElement = document.getElementById("alert");
-  var windowHeight = window.innerHeight;
-  var bodyHeight = document.body.scrollHeight;
-  var scrollPosition = window.scrollY || window.pageYOffset;
+  const alertElement = document.getElementById("alert");
+  const windowHeight = window.innerHeight;
+  const bodyHeight = document.body.scrollHeight;
+  const scrollPosition = window.scrollY || window.pageYOffset;
 
   //place the alert at the bottom of the viewport
   if (scrollPosition > windowHeight) {

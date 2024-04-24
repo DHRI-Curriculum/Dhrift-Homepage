@@ -408,10 +408,11 @@ ul li {
 
 // event alert
 .alert {
-  background-color: rgb(237, 219, 122);
+  background-color: $peach;
   font-family: $font-family-base;
   color: black;
   position: fixed;
+  font-size: 1.1em;
   bottom: 0;
   left: 0;
   z-index: 9999;
@@ -424,7 +425,7 @@ ul li {
   font-weight: bold;
   float: right;
   font-size: 22px;
-  line-height: 20px;
+  line-height: 25px;
   cursor: pointer;
   transition: 0.3s;
 }
