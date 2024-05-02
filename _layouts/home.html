@@ -8,7 +8,7 @@ bodyClass: home
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8">
-        <h1 class="meet-title">"Hello, DHRIFT!"</h1>
+        <h1 class="meet-title">Meet DHRIFT</h1>
         <p class="meet-description">Digital Humanities Infrastructure for Teaching Technology</p>
       </div>
     </div>
@@ -94,23 +94,23 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.style.transform = `rotate(${rotationAngle}deg)`;
     });
 
-// Function to handle alert scrolling
-window.addEventListener('scroll', function() {
-  const alertElement = document.getElementById("alert");
-  const windowHeight = window.innerHeight;
-  const bodyHeight = document.body.scrollHeight;
-  const scrollPosition = window.scrollY || window.pageYOffset;
+  // Function to handle alert scrolling
+  window.addEventListener('scroll', function() {
+    const alertElement = document.getElementById("alert");
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.scrollHeight;
+    const scrollPosition = window.scrollY || window.pageYOffset;
 
-  //place the alert at the bottom of the viewport
-  if (scrollPosition > windowHeight) {
-    alertElement.style.position = "fixed";
-    alertElement.style.bottom = "0";
-    alertElement.style.left = "0";
-    alertElement.style.width = "50%";
-  } else {
-    alertElement.style.position = "relative";
-  }
-});
+    //place the alert at the bottom of the viewport
+    if (scrollPosition > windowHeight) {
+      alertElement.style.position = "fixed";
+      alertElement.style.bottom = "0";
+      alertElement.style.left = "0";
+      alertElement.style.width = "50%";
+    } else {
+      alertElement.style.position = "relative";
+    }
+  });
   });
   </script>
 {% endif %}

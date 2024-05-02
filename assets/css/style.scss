@@ -893,3 +893,11 @@ ul li {
   margin-bottom: 50px;
   text-align: center;
 }
+
+// hamburger menu
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
