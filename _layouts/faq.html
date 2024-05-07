@@ -17,7 +17,7 @@ id: "faq-page"
               <h2 class="service-title faq-title" data-toggle="collapse" data-target="#faq-{{ forloop.index }}">
                 {{ faq.title }}
               </h2>
-              <p class="description">{{ faq.description }}</p>
+              <p class="faq-description">{{ faq.description }}</p>
             </div>
             <div class="col-2 text-right">
               <i id="icon-{{ forloop.index }}" class="fa fa-angle-down fa-3x rotate-icon" aria-hidden="true" style="color: #D8AC6C; transition: transform 0.3s ease-in-out; cursor: pointer;"></i>
@@ -68,6 +68,9 @@ id: "faq-page"
       }
     }
   });
+
+
+  
 </script>
 
 
