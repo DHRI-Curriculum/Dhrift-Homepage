@@ -1,0 +1,23 @@
+[
+    {
+    "title": "DH 2024",
+    "date": "2024-07-22",
+    "description": "DHRIFT will present at the AHDO Digital Humanities Conference.",
+    "image": "/images/dhri.png",
+    "link": "https://app.dhrift.org/inst/?instUser=GC-DRI&instRepo=GCDRI24Schedule",
+    "text": "DHRIFT, an OER tool for publishing, reproducing, and revising interactive DH technical
+    skill workshops, includes modules on topics like Python, JavaScript, and R. In this
+    workshop, attendees will learn about DHRIFT's pedagogy and underlying technologies.
+    Participants will create a customized, static workshop site and build new workshops
+    with DHRIFT."
+    },
+    {
+    "title": "DHRIFT is awarded an NEH Digital Humanities Advancement Grant",
+    "date": "2023-07-22",
+    "description": "DHRIFT gains funding to continue its development.",
+    "image": "/images/dhri.png",
+    "link": "https://app.dhrift.org/inst/?instUser=GC-DRI&instRepo=GCDRI23Schedule",
+    "text": "DHRIFT was awarded an NEH Digital Humanities Advancement Grant to support the ongoing development 
+      of the project. The grant will fund the development of new features, including new workshops and content."
+    }
+  ]

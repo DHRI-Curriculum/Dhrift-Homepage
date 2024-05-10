@@ -901,3 +901,83 @@ ul li {
   z-index: 1000;
 }
 
+// news
+.news-head {
+  font-size: 2.3em;
+  font-family: $font-family-heading !important;
+  color: $primary;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.news-container {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px; 
+  min-height: 300px;
+}
+
+.news-date {
+  margin-right: 20px;
+}
+
+.news-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-details {
+  margin-right: 20px;
+}
+
+.news-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%; 
+}
+
+.image-wrapper {
+  width: 400px; 
+  height: 250px; 
+  overflow: hidden; 
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+}
+
+.additional-text {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 25px;
+  margin-top: -25px;
+}
+
+.read-more {
+  color: $primary;
+  margin-top: -20px;
+  background-color: $primary;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.3s;
+  font-size: 1.2em;
+  color: $white;
+  padding: 10px 20px;
+}
+
+.read-more:hover {
+  background-color: $sky; 
+  color: $primary;
+  cursor: pointer;
+  text-decoration: none;
+}
