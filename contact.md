@@ -11,3 +11,5 @@ Follow us on the socials:
 X
 Blue Sky
 YouTube
+TikTok
+

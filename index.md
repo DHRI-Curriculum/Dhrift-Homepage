@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: true
 show_call_box: false
 ---
 
-A curriculum and infrastructure for technical teaching in the humanities.
+A curriculum and infrastructure for teaching technology with the humanities.
