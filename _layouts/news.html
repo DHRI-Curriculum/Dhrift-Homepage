@@ -1,35 +1,39 @@
 ---
 layout: default
 bodyClass: page-basic
---- 
+---
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
             <h1 class="news-head">Stay up to date with the latest news about the DHRIFT project.</h1>
-            {% for data in site.data.news %}
+            {% assign sorted_news = site.news | sort: 'date' | reverse %}
+            {% for news_item in sorted_news %}
             <div class="news-container">
                 <div class="news-date">
-                    <h6 class="card-subtitle mb-2 text-muted">{{ data.date }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ news_item.date | date: "%B %d, %Y" }}</h6>
                 </div>
                 <div class="news-content">
-                    <div class="card-body">
+                    <div class="news-card-body">
                         <div class="news-details">
-                            <h5 class="card-title">{{ data.title }}</h5>
-                            <p class="card-text">{{ data.description }}</p>
+                            <h5 class="news-card-title">{{ news_item.title }}</h5>
+                            <p class="news-card-text">{{ news_item.description }}</p>
                         </div>
+                        {% if news_item.image %}
                         <div class="news-image-container">
                             <div class="news-image-wrapper">
-                                <img src="{{ data.image }}" class="news-image img-fluid" alt="{{ data.title }}">
+                                <img src="{{ news_item.image }}" class="news-image img-fluid" alt="{{ news_item.title }}">
                             </div>
-                            <div class="additional-text" style="display: none;">
-                                <p>{{ data.text }}</p>
-                            </div>
-                            <a href="#" class="read-more">Learn more</a>
                         </div>
+                        {% endif %}
+                        <div class="additional-text" style="display: none;">
+                            {{ news_item.content | markdownify }}
+                        </div>
+                        <a href="#" class="read-more">Read more</a>
                     </div>
                 </div>
             </div>
+            <hr class="news-separator">
             {% endfor %}
         </div>
     </div>
@@ -48,10 +52,9 @@ bodyClass: page-basic
                     this.textContent = "Read less";
                 } else {
                     additionalText.style.display = "none";
-                    this.textContent = "Learn more";
+                    this.textContent = "Read more";
                 }
             });
         });
     });
 </script>
-    

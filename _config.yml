@@ -20,6 +20,9 @@ collections:
     sort_by: weight
   team:
     output: true
+  news:
+    output: true
+    sort_by: date
 
 defaults:
   - scope:
