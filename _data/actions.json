@@ -5,7 +5,7 @@
         "icon": "school-solid",
         "alt": "DHRIFT's logo, a dandelion.",
         "link": "https://app.dhrift.org/workshops/?instUser=dhri-curriculum&instRepo=dhrift-site-template&user=dhri-curriculum&repo=workshops",
-        "image": "images/learn_with.png",
+        "image": "images/learn.png",
         "message": "Learn with DHRIFT"
     },
         {
@@ -14,7 +14,7 @@
         "icon": "chalkboard-user",
         "alt": "DHRIFT's logo, a dandelion.",
         "link": "/teach",
-        "image": "images/teach.jpg",
+        "image": "images/teach.png",
         "message": "Teach with DHRIFT"
     },
     {
@@ -23,7 +23,7 @@
         "icon": "creative-icon",
         "alt": "DHRIFT's logo, a dandelion.",
         "link":"/create",
-        "image": "images/create.jpg",
+        "image": "images/create.png",
         "message": "Create with DHRIFT"
     },
     {
@@ -32,7 +32,7 @@
           "icon": "building",
           "alt": "DHRIFT's logo, a dandelion.",
           "link":"/grow",
-          "image": "images/build.jpg",
+          "image": "images/grow.png",
           "message": "Grow with DHRIFT"
       }
   ]

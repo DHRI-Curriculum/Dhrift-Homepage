@@ -21,7 +21,7 @@ bodyClass: home
       <div class="action" data-image="{{ action.image }}">
         <div class="action-inner {% cycle 'right', 'left' %}">
           <div class="image-container">
-            <img src=" /images/{{ action.icon }}.svg" alt="{{ action.title }}">
+            <img src="{{ action.image }}" alt="{{ action.title }}">
           </div>
           <div class="content-container {% if forloop.last %}last{% endif %}">
             <h1 class="action-title">{{ action.message }}</h2>

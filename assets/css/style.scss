@@ -552,10 +552,10 @@ ul li {
 }
 
 .image-container img {
-  width: 60%;
-  height: 60%;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .content-container {
@@ -616,7 +616,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .action-inner.left .content-container,
