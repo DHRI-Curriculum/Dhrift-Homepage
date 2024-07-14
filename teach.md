@@ -18,7 +18,7 @@ DHRIFT Core presents a vetted core set of interactive curriculum with embedded c
 6. Simulations 
 7. Javascript
 8. Intro to Mapping (Introduction and Implementation)
-9.  Intro to R
+9. Intro to R
 10. Git/Github
 
 **Interactive Curriculum.** Each curriculum contains interactive elements that reinforce comprehension, facilitate anticipatory learning, and practice verbalized cognition. This includes a [workshop or DHRIFT Core] glossary with reciprocal linking, question/reveals, quizzes, and potentially more. Facilitators can choose which elements to incorporate into their synchronous instructions. Each technical workshop also includes a number of interactive projects that consolidate the lessons of the workshop - for example, a treasure hunt in the Command Line or a critter population simulator in the final Python workshop.
