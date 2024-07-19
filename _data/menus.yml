@@ -25,6 +25,3 @@ footer:
   - name: "Digital Humanities Research Institute"
     url: "https://www.dhinstitutes.org/"
     weight: 2
-  - name: "About GCDI"
-    url: "https://gcdi.commons.gc.cuny.edu/"
-    weight: 3

@@ -2,8 +2,7 @@
     {
         "title": "Start Learning",
       "description": "Are you new to coding? Tried it but it didn't stick? DHRIFT provides open-source, interactive, introductory workshops written by humanities scholars for humanists. Take advantage of lessons that have been vetted and revised in conversation with hundreds of students. Workshops on topics ranging from the command line to Introduction to Python can be run directly in your web browser and utilize interactive code editors, challenges, and quizzes. Read abour our pedagogical approach, or simply start learning.",
-        "icon": "school-solid",
-        "alt": "DHRIFT's logo, a dandelion.",
+        "alt": "A lightbulb.",
         "link": "https://app.dhrift.org/workshops/?instUser=dhri-curriculum&instRepo=dhrift-site-template&user=dhri-curriculum&repo=workshops",
         "image": "images/learn.png",
         "message": "Learn"
@@ -11,8 +10,7 @@
         {
       "title": "Start Teaching",
       "description": "Need to teach a DH workshop? Spend more time teahing and less time on set up and developing your materials by using DHRIFT's menu of interactive, web-based workshops built for synchronous and asynchronous instruction. Read about our experience teaching DH skills and how it informs our pedagogical approach, or just jump right into one of our open-source workshops on DHRIFT Core.",
-        "icon": "chalkboard-user",
-        "alt": "DHRIFT's logo, a dandelion.",
+        "alt": "A laptop.",
         "link": "/teach",
         "image": "images/teach.png",
         "message": "Teach"
@@ -20,8 +18,7 @@
     {
       "title": "Start Creating",
       "description": "Use DHRIFT to turn your own workshops into interactive, web-based publications with our markdown style guide. The DHRIFT app supports an interactive code editor, Jupyter lite notebooks, and coding environments for Python, R, and javascript. Alternatively, take one of our workshops and customize it to meet your own teaching style and needs. Find out what it takes to create a DHRIFT workshop.",
-        "icon": "creative-icon",
-        "alt": "DHRIFT's logo, a dandelion.",
+        "alt": "A paintbrush.",
         "link":"/create",
         "image": "images/create.png",
         "message": "Create"
@@ -30,7 +27,7 @@
         "title": "Start Growing",
         "description": "Cultivate communities of learning and practice by producing your own DHRIFT institute page. Use the DHRIFT site wizard to customize a landing page for your organization that includes selections from our DHIFT core workshops. DHRIFT institute sites include information relevant to your event, as well as a schedule. DHRIFT sites are free, static sites, which can be hosted through GitHub pages. Feel inspired by our gallery of DHRIFT sites.",
           "icon": "building",
-          "alt": "DHRIFT's logo, a dandelion.",
+          "alt": "A growing plant.",
           "link":"/grow",
           "image": "images/grow.png",
           "message": "Grow"
