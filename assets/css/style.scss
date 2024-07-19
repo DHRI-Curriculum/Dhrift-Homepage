@@ -451,8 +451,9 @@ ul li {
 }
 
 .meet-description {
-  font-size: 1.5em;
-  color: $primary; 
+  font-size: 1.2em;
+  color: $primary;
+  text-align: start;
 }
 
 // call to action section
@@ -515,7 +516,7 @@ ul li {
   color: $primary;
   text-decoration: none;
   border: $primary 2px solid;
-  font-size: 1.3em;
+  font-size: 1.2em;
   transition: background-color 0.3s;
   align-self: start;
 }
@@ -564,7 +565,7 @@ ul li {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-right: 20px;
 }
 
@@ -594,7 +595,7 @@ ul li {
 .action-description {
   margin-top: 10px;
   text-align: left;
-  font-size: 1.35em !important;
+  font-size: 1.2em !important;
   //white-space: pre-line;
   margin-bottom: 40px;
 }
