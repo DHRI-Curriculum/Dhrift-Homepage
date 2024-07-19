@@ -1,12 +1,12 @@
 [
     {
-        "title": "Learn",
+        "title": "Start Learning",
       "description": "Are you new to coding? Tried it by it didn't stick? DHRIFT provides open-source, interactive, introductory workshops written by humanities scholars for humanists. Take advantage of lessons that have been vetted and revised in conversation with hundreds of students. Workshops on topics ranging from the command line to Introduction to Python can be run directly in your web browser and utilize interactive code editors, challenges, and quizzes. Read abour our pedagogical approach, or simply start learning.",
         "icon": "school-solid",
         "alt": "DHRIFT's logo, a dandelion.",
         "link": "https://app.dhrift.org/workshops/?instUser=dhri-curriculum&instRepo=dhrift-site-template&user=dhri-curriculum&repo=workshops",
         "image": "images/learn.png",
-        "message": "Learn with DHRIFT"
+        "message": "Learn"
     },
         {
       "title": "Teach",
