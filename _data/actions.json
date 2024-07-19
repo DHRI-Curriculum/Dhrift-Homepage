@@ -19,7 +19,7 @@
     },
     {
       "title": "Start Creating",
-      "description": "Use DHRIFT to turn your own workshops into interactive, web-based publications with our markdown style guide. The DHRIFT app supports an interactive code editor, Jupyter lite notebooks, and coding environments for Python, R, and javascript. Find out what it takes to create a DHRIFT workshop.",
+      "description": "Use DHRIFT to turn your own workshops into interactive, web-based publications with our markdown style guide. The DHRIFT app supports an interactive code editor, Jupyter lite notebooks, and coding environments for Python, R, and javascript. Alternatively, take one of our workshops and customize it to meet your own teaching style and needs. Find out what it takes to create a DHRIFT workshop.",
         "icon": "creative-icon",
         "alt": "DHRIFT's logo, a dandelion.",
         "link":"/create",
@@ -27,13 +27,13 @@
         "message": "Create"
     },
     {
-        "title": "Begin Growing",
-        "description": "Build and host an institute on DHRIFT, with your own branding, your own choice of workshops, and a convenient scheduling component.",
+        "title": "Start Growing",
+        "description": "Cultivate communities of learning and practice by producing your own DHRIFT institute page. Use the DHRIFT site wizard to customize a landing page for your organization that includes selections from our DHIFT core workshops. DHRIFT institute sites include information relevant to your event, as well as a schedule. DHRIFT sites are free, static sites, which can be hosted through GitHub pages. Feel inspired by our gallery of DHRIFT sites.",
           "icon": "building",
           "alt": "DHRIFT's logo, a dandelion.",
           "link":"/grow",
           "image": "images/grow.png",
-          "message": "Grow with DHRIFT"
+          "message": "Grow"
       }
   ]
   
