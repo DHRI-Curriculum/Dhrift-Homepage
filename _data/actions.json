@@ -18,13 +18,13 @@
         "message": "Teach"
     },
     {
-      "title": "Begin Creating",
-      "description": "DHRIFT is designed for extensibility, allowing you to easily create your own workshops and share them with the community.",
+      "title": "Start Creating",
+      "description": "Use DHRIFT to turn your own workshops into interactive, web-based publications with our markdown style guide. The DHRIFT app supports an interactive code editor, Jupyter lite notebooks, and coding environments for Python, R, and javascript. Find out what it takes to create a DHRIFT workshop.",
         "icon": "creative-icon",
         "alt": "DHRIFT's logo, a dandelion.",
         "link":"/create",
         "image": "images/create.png",
-        "message": "Create with DHRIFT"
+        "message": "Create"
     },
     {
         "title": "Begin Growing",
