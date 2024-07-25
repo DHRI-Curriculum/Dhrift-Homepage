@@ -1,10 +1,12 @@
 <div class="main-menu">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
-  <ul>
-    {% for item in mainmenu %}
+  {% for item in site.data.menus.main %}
+</div>
+    <h3> {{ item.title }} </h3>
+    <ul>
+    {% for entry in item.main %}
     <li class="{% if item.url == page.url %}active{% endif %}">
       <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
-  </ul>
+    </ul>
 </div>

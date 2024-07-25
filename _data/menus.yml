@@ -1,22 +1,47 @@
 main:
-  - name: "About"
-    url: "/about/"
+  - title: "About"
     weight: 1
-  - name: "FAQ"
-    url: "/faq/"
+    subnav:
+      - page: "Features"
+        url: "/features/"
+      - page: "History"
+        url: "/history/"
+      - page: "Team"
+        url: "/team/" 
+      - page: "Contact"
+        url: "/contact/" 
+  - title: "Curriculum"
     weight: 2
-  - name: "News"
-    url: "/news/"
+    subnav:
+      - page: "Workshops"
+        url: "/workshops/"
+      - page: "Glossary"
+        url: "/glossary/"
+  - title: "Community"
     weight: 3
-  - name: "Team"
-    url: "/team/"
+    subnav:
+      - page: "Gallery"
+        url: "/gallery/"
+      - page: "DHRI"
+        url: "/dhri/"
+  - title: "Support"
     weight: 4
-  - name: "Contact"
-    url: "/contact/"
+    subnav:
+      - page: "User Guide"
+        url: "/userguide/"
+      - page: "FAQ"
+        url: "/faq/"
+  - title: "Publications"
     weight: 5
-  - name: "Gallery"
-    url: "/gallery/"
-    weight: 6
+    subnav:
+      - page: "News"
+        url: "/news/"
+      - page: "Reports"
+        url: "/reports/"
+      - page: "Articles"
+        url: "/articles/"
+      - page: "Media"
+        url: "/media/"
 
 footer:
   - name: "Contact"
