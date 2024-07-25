@@ -10,7 +10,13 @@
       </div>
     </div>
     <div class="page-name">
-      <h1 id="currentPageName"></h1>
+      <h1 id="currentPageName">
+        {% if page.title %}
+          {{ page.title }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
     </div>
   </div>
 </div>

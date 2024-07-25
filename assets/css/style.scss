@@ -114,6 +114,14 @@ ul li {
   margin-top:-40px;
 }
 
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 // hamburger menu responsiveness
 @media (max-width: 1200px) {
   #toggle-main-menu-mobile {

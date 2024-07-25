@@ -1,7 +1,6 @@
 <div class="main-menu">
-  {% for item in site.data.menus.main %}
-</div>
-    <h3> {{ item.title }} </h3>
+  {% for thing in site.data.menus.main %}
+    <h3> {{ thing.title }} </h3>
     <ul>
     {% for entry in item.main %}
     <li class="{% if item.url == page.url %}active{% endif %}">
@@ -9,4 +8,5 @@
     </li>
     {% endfor %}
     </ul>
+  {% endfor %}
 </div>
