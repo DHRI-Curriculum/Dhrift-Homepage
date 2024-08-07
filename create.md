@@ -32,6 +32,6 @@ And reveals
 
 ![Markdown Reveal](/images/markdown_reveal.png "Markdown Reveal")
 
-Click here for Workshop Creator Workshop
+Click here for our [Workshop Creator Workshop](https://app.dhrift.org/dynamic/?user=dhri-curriculum&repo=workshops&file=catch-our-dhrift&instUser=dhri-curriculum&instRepo=dhrift-site-template)
 
 
