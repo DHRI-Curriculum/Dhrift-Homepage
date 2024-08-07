@@ -9,7 +9,7 @@
     },
         {
       "title": "Start Teaching",
-      "description": "Need to teach a DH workshop? Spend more time teahing and less time on set up and developing your materials by using DHRIFT's menu of interactive, web-based workshops built for synchronous and asynchronous instruction. Read about our experience teaching DH skills and how it informs our pedagogical approach, or just jump right into one of our open-source workshops on DHRIFT Core.",
+      "description": "Need to teach a DH workshop? Spend more time teaching and less time on set up and developing your materials by using DHRIFT's menu of interactive, web-based workshops built for synchronous and asynchronous instruction. Read about our experience teaching DH skills and how it informs our pedagogical approach, or just jump right into one of our open-source workshops on DHRIFT Core.",
         "alt": "A laptop.",
         "link": "/teach",
         "image": "images/teach.png",
@@ -28,7 +28,7 @@
         "description": "Cultivate communities of learning and practice by producing your own DHRIFT institute page. Use the DHRIFT site wizard to customize a landing page for your organization that includes selections from our DHIFT core workshops. DHRIFT institute sites include information relevant to your event, as well as a schedule. DHRIFT sites are free, static sites, which can be hosted through GitHub pages. Feel inspired by our gallery of DHRIFT sites.",
           "icon": "building",
           "alt": "A growing plant.",
-          "link":"/grow",
+          "link":"https://app.dhrift.org/wizard/",
           "image": "images/grow.png",
           "message": "Grow"
       }
