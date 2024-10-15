@@ -82,6 +82,12 @@ $sub-footer-text-color: $white;
 @import "pages/page-teams";
 @import "pages/page-service";
 
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
 body {
   font-size: 16px;
   line-height: 1.2;
@@ -140,6 +146,29 @@ ul li {
   background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
   z-index: 1000;
 }
+
+#main-menu-mobile {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.main-menu-mobile {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 420px) {
+  .main-menu-mobile {
+      width: 100%;
+      padding: 0;
+      overflow-x: hidden;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 // header stuff
 .header {
@@ -624,6 +653,38 @@ ul li {
     margin-bottom: 30px; 
     margin-left: 20px;
     overflow: visible;
+  }
+
+  .content-container,
+  .image-container {
+    width: 100%; 
+    margin-left: 20px;
+    margin-top: -30px; 
+    //margin-bottom: 20px; 
+  }
+
+  .action-icon img {
+    max-width: 70px; 
+    max-height: 70px; 
+  }
+
+  .content-container.last
+  {
+    margin-bottom: -20px; 
+  }
+}
+
+@media (max-width: 450px) {
+  .action-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-inner.left .content-container,
+  .action-inner.right .content-container {
+    margin-bottom: 30px; 
+    margin-left: 20px;
+    //overflow: visible;
   }
 
   .content-container,
